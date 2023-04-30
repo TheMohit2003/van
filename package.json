@@ -1,18 +1,21 @@
 {
-  "name": "project",
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "6.4.3"
-  },
-  "devDependencies": {
-    "vite": "latest",
-    "@vitejs/plugin-react": "*"
-  },
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  }
+    "name": "project",
+    "dependencies": {
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-router-dom": "6.4.3"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "*",
+        "prettier": "2.8.8",
+        "vite": "latest"
+    },
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "npx prettier --write .",
+        "check:format": "npx prettier --check ."
+    }
 }
